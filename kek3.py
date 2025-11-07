@@ -102,7 +102,7 @@ class Checkers(QWidget):
         for checker in reversed(self.checkers):
             cx = checker["pos"].x() * size + size / 2
             cy = checker["pos"].y() * size + size / 2
-            if (x - cx) ** 2 + (y - cy) ** 2 <= 30 ** 2:
+            if (x - cx) ** 2 + (y - cy) ** 2 <= 50 ** 2:
                 # Ходить можно только шашке своего цвета
                 if checker["color"] == self.current_turn:
                     self.selected_checker = checker
